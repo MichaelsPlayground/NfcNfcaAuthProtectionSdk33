@@ -134,13 +134,13 @@ the free user memory of the tag.
 - disable counter / deactivate the counter: after the deactivation of the counter, a reading attempt is made
   to a mistake.
 
-With regard to the next functions, I will first explain how "mirroring" or the
-Reflection. Both the unique "serial" number (UID) and the meter reading can be used by many
-Android smartphones cannot be read. On Apple's IOS, NFC tags can only be used via the NDEF
-technology and not "low level" using NFCA. So that this information e.g
-For security reasons, the tag manufacturer NXP has the mirroring or display in the
-User storage provided. That means in plain language: the values of the UID and/or the counter
-are placed virtually over the earlier data and are read instead when read out.
+With regard to the next functions, I will first explain how "mirroring" or the 
+Reflection works. Both the unique "serial" number (UID) and the meter reading can be used by many 
+Android smartphones cannot be read. On Apple's IOS, NFC tags can only be used via the NDEF 
+technology and not "low level" using NFCA. So that this information e.g 
+For security reasons, the tag manufacturer NXP has the mirroring or display in the 
+User storage provided. That means in plain language: the values of the UID and/or the counter 
+are placed virtually over the earlier data and are provided instead when read out.
 
 For your own experiments, I recommend running the "NfcNfcaTagHexDump" app on your smartphone at the same time,
 because the complete memory content of the tag is clearly displayed.
@@ -255,7 +255,7 @@ http://androidcrypto.bplaced.net/test.html?d=UUUUUUUUUUUUUUxCCCCCC
 You will have guessed it - the "UU.." are placeholders for the UID and the "CC.." for
 the counter.
 
-Describe the day and get this result in the HexDump:
+Write this to the tag and get this result in the HexDump:
 
 ```plaintext
 00000010:03 40 D1 01 3C 55 03 61 |.....E.a
@@ -307,10 +307,9 @@ A script behind the address can now evaluate that the tag with the serial number
 04408982355B81 has now been read out 101 times (65h) and is making contact with the server.
 
 - clear tag to factory settings / reset the tag to factory settings: This menu item
-  describes the complete memory of an NTAG216 with the values as in a brand new one
-  tag are available. This action can take up to a minute and it is therefore very important
-  Putting your smartphone on the tag and not moving it anymore to get a "tag lost exception".
-  avoid.
+  writes the complete memory of an NTAG216 with the values as in a brand new one
+  tag available. This action can take up to a minute and it is therefore very important to 
+  lay your smartphone on the tag and do not moving it anymore to avoid a "tag lost exception".
 
-However, this action can only be carried out on a tag that does not activate write protection
-has. You should therefore first deactivate any "write protection" that may have been set up.
+However, this action can only be carried out on a tag that does not have activated the write protection. 
+You should therefore first deactivate any "write protection" that may have been set up.
