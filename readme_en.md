@@ -13,7 +13,7 @@ therefore only use the app with test tags or tags that are not in productive use
 Use the menu at the top right to operate the app and access the following activities:
 
 To understand the individual data fields and activities, it is very helpful to have the official
-Download and open the manufacturer's data sheet. This link takes you to
+Download and open the manufacturer's data sheet. This link takes you to the 
 Data sheet: https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf
 
 **read from tag / read tag**:
